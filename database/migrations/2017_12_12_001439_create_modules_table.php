@@ -17,7 +17,7 @@ class CreateModulesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->unsignedInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('setNull');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

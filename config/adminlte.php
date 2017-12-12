@@ -120,10 +120,18 @@ return [
             'icon'    => 'database',
             'submenu' => [
                 [
-                    'text' => 'Tabela de Usuários',
+                    'text' => 'Usuários',
                     'url'  => '/users',
                     'icon' => 'users',
                 ],
+                [
+                    'text' => 'Módulos',
+                    'url' => '/modules'
+                ],
+                [
+                    'text' => 'Turma',
+                    'url' => '#'
+                ]
             ],
         ],
     ],

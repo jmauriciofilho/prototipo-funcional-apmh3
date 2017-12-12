@@ -17,7 +17,7 @@ class CreateQuestionsTable extends Migration
             $table->increments('id');
             $table->text('content');
             $table->unsignedInteger('module_id');
-            $table->foreign('module_id')->references('id')->on('modules')->onDelete('setNull');
+            $table->foreign('module_id')->references('id')->on('modules');
             $table->timestamps();
         });
     }
