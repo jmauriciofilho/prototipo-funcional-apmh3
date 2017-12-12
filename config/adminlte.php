@@ -125,12 +125,14 @@ return [
                     'icon' => 'users',
                 ],
                 [
-                    'text' => 'Módulos',
-                    'url' => '/modules'
+                    'text' => 'Modulos',
+                    'url' => '/modules',
+                    'icon' => 'book'
                 ],
                 [
                     'text' => 'Turma',
-                    'url' => '#'
+                    'url' => '#',
+                    'icon' => 'users'
                 ]
             ],
         ],

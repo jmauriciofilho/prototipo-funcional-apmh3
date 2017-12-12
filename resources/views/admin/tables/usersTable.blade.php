@@ -14,21 +14,13 @@
         <div class="panel-body">
             <table id="example" class="table table-bordered" cellspacing="0" width="100%">
                 <thead>
-                <tr class="active">
+                <tr>
                     <th>Nome</th>
                     <th>Sobrenome</th>
                     <th>Email</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
-                <tfoot>
-                <tr class="active">
-                    <th>Nome</th>
-                    <th>Sobrenome</th>
-                    <th>Email</th>
-                    <th>Actions</th>
-                </tr>
-                </tfoot>
                 <tbody>
                     @foreach($users as $user)
                         <tr>

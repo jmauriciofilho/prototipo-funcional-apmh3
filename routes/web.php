@@ -37,4 +37,6 @@ Route::prefix('change-password')->group(function () {
 
 Route::get('/modules', 'Admin\ModuleController@index')->name('index-modules');
 
+Route::get('/modules/{id}/questions', 'Admin\QuestionController@index')->name('index-questions');
+
 

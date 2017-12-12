@@ -3,31 +3,35 @@
 @section('title', 'Usuários')
 
 @section('content_header')
-    <h1>Modulos</h1>
+    <h1>Modulo {!! $module->title !!}</h1>
 @stop
 
 @section('content')
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Modulos Cadastrados</h3>
+            <h3 class="panel-title">Questões do Modulo {!! $module->title !!}</h3>
         </div>
         <div class="panel-body">
+            <a class="btn btn-success" href="#">Adicionar Questão</a>
+            <br>
+            <br>
             <table id="example" class="table table-bordered" cellspacing="0" width="100%">
                 <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Criador</th>
-                    <th>Questões</th>
-                </tr>
+                    <tr>
+                        <th>Cabeçario</th>
+                        <th>Visualizar</th>
+                        <th>Editar</th>
+                    </tr>
                 </thead>
                 <tbody>
-                @foreach($modules as $module)
+                @foreach($objs as $obj)
                     <tr>
-                        <td>{!! $module->title !!}</td>
-                        <td>{!! $module->user->name !!}</td>
+                        <td>{!! $obj->content !!}</td>
                         <td>
-                            <a class="btn fa fa-eye btn-default"
-                               href="/modules/{!! $module->id !!}/questions"></a>
+                            <a class="btn fa fa-eye btn-default" href="#"></a>
+                        </td>
+                        <td>
+                            <a class="btn fa fa-pencil btn-default" href="#"></a>
                         </td>
                     </tr>
                 @endforeach
