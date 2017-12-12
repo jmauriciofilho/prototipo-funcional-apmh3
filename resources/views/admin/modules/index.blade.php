@@ -32,7 +32,9 @@
                     <tr>
                         <td>{!! $module->title !!}</td>
                         <td>{!! $module->user->name !!}</td>
-                        <td>Botão</td>
+                        <td>
+                            <a class="btn fa fa-eye btn-default" href="#"></a>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>
@@ -56,7 +58,7 @@
     <script>
         $(document).ready(function() {
             $('#example').DataTable({
-                columnDefs: [{orderable: false, targets: [3]}]
+                columnDefs: [{orderable: false, targets: [2]}]
             });
         } );
     </script>
