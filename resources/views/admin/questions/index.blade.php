@@ -30,7 +30,8 @@
                     <tr>
                         <td>{!! $obj->content !!}</td>
                         <td>
-                            <a class="btn fa fa-eye btn-default" href="#"></a>
+                            <a class="btn fa fa-eye btn-default"
+                               href="/module/{!! $module->id !!}/questions/{!! $obj->id !!}/details"></a>
                         </td>
                         <td>
                             <a class="btn fa fa-pencil btn-default" href="#"></a>

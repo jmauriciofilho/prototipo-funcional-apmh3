@@ -43,4 +43,6 @@ Route::get('/module/{id}/questions/create', 'Admin\QuestionController@create')->
 
 Route::post('/module/{id}/questions/create', 'Admin\QuestionController@store')->name('store-question');
 
+Route::get('/module/{module_id}/questions/{id}/details', 'Admin\QuestionController@details')->name('details-question');
+
 
