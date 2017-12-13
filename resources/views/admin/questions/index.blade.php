@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Usuários')
+@section('title', 'Questões')
 
 @section('content_header')
     <h1>Modulo {!! $module->title !!}</h1>
@@ -12,7 +12,9 @@
             <h3 class="panel-title">Questões do Modulo {!! $module->title !!}</h3>
         </div>
         <div class="panel-body">
-            <a class="btn btn-success" href="#">Adicionar Questão</a>
+            <a class="btn btn-success" href="/module/{!! $module->id !!}/questions/create">
+                Adicionar Questão
+            </a>
             <br>
             <br>
             <table id="example" class="table table-bordered" cellspacing="0" width="100%">
